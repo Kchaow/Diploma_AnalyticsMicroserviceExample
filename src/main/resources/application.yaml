@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: Analytics
+
+server:
+  port: 8010
+  servlet:
+    context-path: /api/v1
+
+integration:
+  reports-url: http://localhost:8011/api/v1
