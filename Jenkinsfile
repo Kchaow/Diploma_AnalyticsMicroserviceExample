@@ -59,7 +59,7 @@ pipeline {
                     httpMode: 'GET',
                     acceptType: 'APPLICATION_JSON'
                 )
-                def responseContent = new groovy.json.JsonSlurper().parseText(getChangeGraphStatusResponse.content.toString())
+                def responseContent = new HashMap<>(new groovy.json.JsonSlurper().parseText(getChangeGraphStatusResponse.content.toString()))
                 changeGraph = [
                     status: responseContent.status.toString(),
                     verificationStatus: responseContent.verificationStatus.toString()
