@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	parameters {
-        booleanParam(name: 'skip_build', defaultValue: false, description: 'Поставить true, чтобы не проводить сборку проекта')
+        booleanParam(name: 'skip_build', defaultValue: true, description: 'Поставить true, чтобы не проводить сборку проекта')
     }
 
     environment {
