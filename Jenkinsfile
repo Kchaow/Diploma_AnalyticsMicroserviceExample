@@ -27,7 +27,7 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Проверка целостности связей') {
 			steps {
 				echo "Проверка целостности связей"
         script {
